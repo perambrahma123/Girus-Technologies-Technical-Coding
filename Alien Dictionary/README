@@ -1,0 +1,49 @@
+Description
+Given a sorted list of words from an alien language, determine the order of characters in that language. Although the words use 
+English lowercase letters (a–z), the actual character order is unknown and must be inferred based on how the words are sorted.
+
+This problem is a classic example of inferring topological order from a partial ordering of data.
+
+Input Format
+An integer n representing the number of words.
+
+n lines, each containing a word. The words are sorted according to the alien dictionary.
+
+Output Format
+A single line containing a string representing the characters in the correct order for the alien language.
+
+If the order cannot be determined (e.g., due to a cycle or invalid input), output:
+
+Constraints
+All words contain only lowercase English letters.
+
+The list is non-empty and contains at least one word.
+
+All words are sorted according to the alien language rules.
+
+Approach
+Graph Construction
+
+Compare each pair of adjacent words to determine character precedence.
+
+For the first differing character between two words, add a directed edge from the character in the first word to the one in the second word.
+
+If a word is a prefix of another and comes later, it is an invalid order.
+
+Topological Sorting
+
+Use Kahn's Algorithm (BFS) to perform a topological sort of the characters.
+
+Track in-degrees for each character.
+
+If a cycle is detected (not all characters can be resolved), the order is invalid.
+
+Sample Input:
+5
+wrt
+wrf
+er
+ett
+rftt
+Sample Output:
+Character order: wertf
