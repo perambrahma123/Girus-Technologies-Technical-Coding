@@ -1,0 +1,42 @@
+You are given a 2D grid representing a map. Each cell in the grid is either:
+
+0 – an empty cell that can be traversed,
+
+1 – a wall or blocked cell that cannot be traversed.
+
+Your objective is to find the shortest path from the top-left corner (0,0) to the bottom-right corner (n-1,m-1).
+
+Twist: Teleportation
+You are allowed to teleport exactly once between any two empty cells (0) in the grid.
+
+The teleportation can be used at any time during the journey and allows you to instantly move from one empty cell to another, even if they are far apart. However, you can only use this teleport once, and only between two different 0 cells.
+
+Constraints
+Grid dimensions: 1 ≤ n, m ≤ 100
+
+Grid values: only 0 (empty cell) or 1 (wall)
+
+You can only move up, down, left, or right (no diagonal movement).
+
+You may teleport only once, and only between two distinct 0 cells.
+
+Sample Input 1:
+
+5 5
+0 1 1 1 1
+0 0 0 1 1
+1 1 0 1 1
+1 1 0 0 0
+1 1 1 1 0
+
+Sample Output 1:
+7
+Sample Input 2
+
+3 3
+0 1 1
+1 1 1
+1 1 0
+
+Sample Output 2:
+-1
