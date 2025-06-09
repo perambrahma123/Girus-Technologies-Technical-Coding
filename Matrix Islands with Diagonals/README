@@ -1,0 +1,23 @@
+You are given a 2D grid of size n × m, filled with 0s and 1s.
+
+Your task is to count the number of distinct islands in the matrix. An island is a group of 1s connected horizontally, vertically, or diagonally.
+
+Constraints
+1 ≤ n, m ≤ 1000
+
+Each cell is either 0 or 1
+
+Time limit should be suitable for grid traversal (BFS/DFS)
+Input Format
+First line contains two integers: number of rows n and columns m
+Next n lines each contain m space-separated values (0 or 1)
+Output Format
+A single integer representing the number of distinct islands
+Sample Input 1:
+4 5
+1 1 0 0 0
+0 1 0 0 1
+1 0 0 1 1
+0 0 0 0 0
+Sample Output 1:
+3
