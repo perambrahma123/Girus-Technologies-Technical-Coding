@@ -1,0 +1,15 @@
+Given an integer n, find the next greater integer that has the same number of binary 1s as n in its binary representation.
+
+Example:
+If n = 5, which is 101 in binary (has two 1s), the next greater integer with two 1s is 6 (110 in binary).
+
+Constraints
+1 ≤ n ≤ 10^9
+
+The returned number must be greater than n
+
+The binary representation must contain the same count of 1s as n
+sample input 1: 5
+sample output 1:6
+sample input 2: 11
+sample output 2:13
