@@ -1,0 +1,74 @@
+This is a simple interpreter that parses and evaluates a basic set of programming statements. It supports:
+
+let variable declarations and assignments
+
+if-else conditional blocks
+
+Arithmetic expressions (+, -, *, /)
+
+Boolean comparisons (==, !=, <, >, <=, >=)
+
+Local variable scoping inside blocks
+Features
+Supports integer variables
+ 
+Supports conditional execution using if-else
+
+Evaluates expressions using variables and constants
+
+Maintains local scope for variables inside blocks
+
+No parentheses or loops supported (can be added)
+Input Format
+Code is entered directly via the console.
+
+End the input by pressing Enter on an empty line.
+
+Each statement should end with a ;.
+
+Output Format
+The interpreter prints the result of the last expression evaluated in the selected block.
+
+
+How to Run
+Steps
+Save the code in a file named MiniInterpreter.java.
+
+Open a terminal and compile the file.
+Supported Syntax
+1. Variable Declaration
+let a = 5;
+
+2. Arithmetic Expressions
+a + 2;
+b * 4;
+
+3. Conditional Execution
+if (a > b) {
+    let z = a + b;
+    z;
+} else {
+    0;
+}
+
+Limitations
+Only integer expressions are supported.
+
+Parentheses in expressions are not supported.
+
+No error handling for invalid syntax.
+
+No loop constructs (for, while) are supported.
+
+Example Input:
+let x = 10;
+let y = 5;
+if (x > y) {
+    let z = x + y;
+    z;
+} else {
+    0;
+}
+                    
+Example Output:
+15
